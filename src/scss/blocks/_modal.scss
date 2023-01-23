@@ -13,3 +13,10 @@
 .modal-footer {
   padding: calc(var(--bs-modal-footer-padding-y) - var(--bs-modal-footer-gap) * .5) calc(var(--bs-modal-footer-padding-x) - var(--bs-modal-footer-gap) * .5);
 }
+
+@include media-breakpoint-down(sm) {
+  .modal {
+    --bs-modal-padding: 1rem;
+    --bs-modal-header-padding: 1rem;
+  }
+}
