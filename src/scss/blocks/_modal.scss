@@ -1,0 +1,15 @@
+.modal {
+  --#{$prefix}modal-padding: #{$modal-inner-padding};
+  --#{$prefix}modal-padding-y: #{$modal-inner-padding-y};
+  --#{$prefix}modal-padding-x: #{$modal-inner-padding-x};
+  --#{$prefix}modal-footer-padding-y: #{$modal-footer-padding-y};
+  --#{$prefix}modal-footer-padding-x: #{$modal-footer-padding-x};
+}
+
+.modal-body {
+  padding: var(--bs-modal-padding);
+}
+
+.modal-footer {
+  padding: calc(var(--bs-modal-footer-padding-y) - var(--bs-modal-footer-gap) * .5) calc(var(--bs-modal-footer-padding-x) - var(--bs-modal-footer-gap) * .5);
+}

@@ -1,3 +1,4 @@
+@use "sass:math";
 // Toggle global options
 $enable-shadows: true;
 
@@ -6,3 +7,19 @@ $body-color: #333;
 $body-bg: #fff;
 $border-radius: .4rem;
 $success: #7952b3;
+
+$modal-inner-padding-y: 3rem;
+$modal-inner-padding-x: 4rem; // 64px
+$modal-inner-padding: math.div($modal-inner-padding-y, 2) $modal-inner-padding-x $modal-inner-padding-y;
+
+$modal-header-border-width: 0;
+$modal-footer-border-width: 0;
+
+$modal-header-padding-y: $modal-inner-padding-y;
+$modal-header-padding-x: $modal-inner-padding-x;
+$modal-header-padding: $modal-header-padding-y $modal-header-padding-x math.div($modal-header-padding-y, 2);
+
+$modal-footer-padding-y: $modal-header-padding-y;
+$modal-footer-padding-x: $modal-inner-padding-x;
+
+$modal-md: 490px;
